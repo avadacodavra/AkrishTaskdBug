@@ -1,0 +1,130 @@
+body {  
+    color: black;
+    font-family: sans-serif;
+    background-image: url(web.jpg);
+    background-size: cover;
+}
+.header{
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 40px;
+    background-color: rgb(87, 144, 223);
+    border: 2px solid rgb(255, 253, 253);
+    align-items: normal;
+}
+.head{
+    color: rgb(44, 56, 162);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    width: 150px;
+    height: 45px;
+    background-color: rgb(3, 111, 111);
+    border: 1px solid rgb(218, 218, 222);
+    border-radius: 40px;
+    text-align: center;
+    list-style: none;
+    margin: 0 40px;
+    animation: colorAnimate 4s ease-in 1s infinite alternate;
+    box-shadow: 3px 3px 8px black;
+}
+nav ul li:hover{
+    width: 160px;
+    height: 50px;
+    box-shadow: 5px 5px 10px black;
+}
+@keyframes colorAnimate{
+    0%{
+        background-color: rgb(44, 56, 162);
+    }
+    50%{
+        background-color: rgb(0, 80, 80);
+    }
+    80%{
+        background-color: rgb(0, 80, 80);
+    }
+    100%{
+        background-color: rgb(44,56, 162);
+}
+
+
+    
+}
+#icon{
+    position: relative;
+    top: 10px;
+}
+a{
+    padding: 5px;
+    position: relative;
+    top: 10px;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(87, 144, 223);
+}
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+.card{
+    width: 400px;
+    height: 600px;
+    border: 2px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color:white;
+    margin: 20px;
+    box-shadow: 3px 3px 8px black;
+    transition: 0.2s ease-in-out;
+
+}
+.card-wrapper {
+    flex: 1;
+}
+.card:hover{
+    box-shadow: 7px 7px 18px black;
+}
+.main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+input[type="submit"]{
+    border-radius: 40px;
+    height: 35px;
+    width: 70px;
+}
+input[type="submit"]:hover {
+    background-color: rgb(87, 144, 223);
+}
+/* Responsive Styles are down below */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        margin: 30px;
+    }
+
+
+    .card {
+        width: 80%; 
+    }
+}
